@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   }
   s.social_media_url = "https://twitter.com/pointfreeco"
   s.source = {
-    :git => "https://github.com/trentf-carsales/swift-snapshot-testing.git",
+    :git => "https://github.com/seniorQAautomationEngineer/SnapshotTestingHEIC.git",
     :tag => s.version
   }
   s.swift_versions = "5.6", "5.7", "5.8", "5.9"
@@ -25,8 +25,8 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.10"
   s.tvos.deployment_target = "10.0"
   s.frameworks = "XCTest"
-  #s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
+  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
   s.source_files  = "Sources", "Sources/**/*.swift"
   
-  s.dependency 'SnapshotTesting'
+  s.dependency 'SnapshotTesting', '1.11.0'
 end
